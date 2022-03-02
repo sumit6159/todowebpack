@@ -13,10 +13,14 @@
   "dependencies": {
     "css": "^3.0.0",
     "css-loader": "^6.6.0",
+    "img-loader": "^4.0.0",
     "loader": "^2.1.1",
     "style": "^0.0.3",
     "style-loader": "^3.3.1",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

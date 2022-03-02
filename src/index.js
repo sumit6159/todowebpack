@@ -1,5 +1,6 @@
-//import {mult,add} from "./calc"
+
 import "./index.css"
+import img from './images/file.png';
 
 
 const form = document.createElement("form")

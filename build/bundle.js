@@ -40,6 +40,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
+/***/ "./src/images/file.png":
+/*!*****************************!*\
+  !*** ./src/images/file.png ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"31d6cfe0d16ae931b73c59d7e0c089c0.png\");\n\n//# sourceURL=webpack://day1-webpack/./src/images/file.png?");
+
+/***/ }),
+
 /***/ "./src/index.css":
 /*!***********************!*\
   !*** ./src/index.css ***!
@@ -116,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n//import {mult,add} from \"./calc\"\n\n\n\nconst form = document.createElement(\"form\")\nform.setAttribute(\"class\",\"myform\")\nlet inputName = document.createElement(\"input\")\ninputName.setAttribute(\"class\", \"name\")\ninputName.placeholder = \"Name\"\ninputName.type = \"text\"\n\nlet inputemail = document.createElement(\"input\")\ninputemail.setAttribute(\"class\", \"email\")\ninputemail.placeholder = \"Email\"\ninputemail.type = \"email\"\n\nlet submit = document.createElement(\"input\")\nsubmit.value = \"submit\"\nsubmit.type = \"submit\"\n\nlet divnote = document.createElement(\"div\")\n\nlet inputnote = document.createElement(\"input\")\ninputnote.setAttribute(\"class\", \"notes\")\ninputnote.placeholder = \"write something\"\ninputnote.type = \"text\"\n\nform.append(inputName,inputemail,submit)\ndivnote.append(inputnote)\ndocument.getElementById(\"root\").append(form,divnote)\n\n\ndocument.querySelector(\".myform\").addEventListener(\"submit\",addItem);\n\nfunction addItem(event){\n    event.preventDefault();\n    var name = document.querySelector(\".name\").value;\n    var Email = document.querySelector(\".email\").value;\n    var notes = document.querySelector(\".notes\").value\n\n    var row = document.createElement('tr')\n     \n    var td1 = document.createElement('td')\n    td1.textContent=name;\n    var td2 = document.createElement('td')\n    td2.textContent=Email;\n    var td3 = document.createElement('td')\n    td3.textContent=notes;\n  \n    var td4 = document.createElement('td')\n    td4.textContent=\"delete\";\n    td4.addEventListener(\"click\", deleteTask);\n    row.append(td1,td2,td3,td4);\n    document.querySelector(\"tbody\").append(row);\n\n}\n    function deleteTask(event){\n        event.target.parentNode.remove();\n    }\n\n//# sourceURL=webpack://day1-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _images_file_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/file.png */ \"./src/images/file.png\");\n\n\n\n\n\nconst form = document.createElement(\"form\")\nform.setAttribute(\"class\",\"myform\")\nlet inputName = document.createElement(\"input\")\ninputName.setAttribute(\"class\", \"name\")\ninputName.placeholder = \"Name\"\ninputName.type = \"text\"\n\nlet inputemail = document.createElement(\"input\")\ninputemail.setAttribute(\"class\", \"email\")\ninputemail.placeholder = \"Email\"\ninputemail.type = \"email\"\n\nlet submit = document.createElement(\"input\")\nsubmit.value = \"submit\"\nsubmit.type = \"submit\"\n\nlet divnote = document.createElement(\"div\")\n\nlet inputnote = document.createElement(\"input\")\ninputnote.setAttribute(\"class\", \"notes\")\ninputnote.placeholder = \"write something\"\ninputnote.type = \"text\"\n\nform.append(inputName,inputemail,submit)\ndivnote.append(inputnote)\ndocument.getElementById(\"root\").append(form,divnote)\n\n\ndocument.querySelector(\".myform\").addEventListener(\"submit\",addItem);\n\nfunction addItem(event){\n    event.preventDefault();\n    var name = document.querySelector(\".name\").value;\n    var Email = document.querySelector(\".email\").value;\n    var notes = document.querySelector(\".notes\").value\n\n    var row = document.createElement('tr')\n     \n    var td1 = document.createElement('td')\n    td1.textContent=name;\n    var td2 = document.createElement('td')\n    td2.textContent=Email;\n    var td3 = document.createElement('td')\n    td3.textContent=notes;\n  \n    var td4 = document.createElement('td')\n    td4.textContent=\"delete\";\n    td4.addEventListener(\"click\", deleteTask);\n    row.append(td1,td2,td3,td4);\n    document.querySelector(\"tbody\").append(row);\n\n}\n    function deleteTask(event){\n        event.target.parentNode.remove();\n    }\n\n//# sourceURL=webpack://day1-webpack/./src/index.js?");
 
 /***/ })
 
@@ -171,6 +181,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +207,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
